@@ -11,6 +11,7 @@ export const addOneContact = async () => {
     await writeContacts(newContacts);
   } catch (error) {
     console.error(error.message);
+    throw error;
   }
 };
 

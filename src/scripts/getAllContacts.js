@@ -6,6 +6,7 @@ export const getAllContacts = async () => {
     return allContacts;
   } catch (error) {
     console.error(error.message);
+    throw error;
   }
 };
 
